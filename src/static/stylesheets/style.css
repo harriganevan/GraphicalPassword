@@ -1,0 +1,386 @@
+html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: rgb(108,143,255);
+    background: linear-gradient(45deg, rgba(108,143,255,1) 0%, rgba(214,0,255,1) 100%);
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    overflow: hidden;
+}
+
+.button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px;
+    margin: 5px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #303030;
+}
+
+.reset{
+    float: right;
+    margin-top: 1%;
+    margin-right: 1%;
+}
+
+.settings{
+    float: left;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+.flash{
+    color: red;
+    font-size: 25pt;
+    background-color: lightcoral;
+    float: left;
+    position: absolute;
+    margin-left: 2%;
+    margin-top: 3%;
+}
+
+.image {
+    position: relative;
+    text-align: center;
+}
+
+.number {
+    position: absolute;
+    top: -16%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: red;
+    font-size: 24pt;
+}
+
+.iname {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    color: black;
+    font-size: 18pt;
+}
+
+#settings-window {
+    position: fixed;
+    top: 20%;
+    left: 0.65%;
+    width: 150px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    display: none;
+}
+  
+#logout {
+    color: white;
+}
+
+/*************START HOMEPAGE*************/
+#homepage-image {
+    margin-top: 3%;
+}
+
+#homepage-white {
+    background-color: white;
+    width: 35%;
+    height: 50%;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 15px;
+}
+
+#homepage-buttons{
+    padding-top: 19%;
+}
+
+#homepage-button {
+    width: 50%;
+}
+/**************STOP HOMEPAGE*************/
+
+/*************START LOGIN1***************/
+#login1-image {
+    margin-top: 3%;
+}
+
+#login1-white {
+    background-color: white;
+    width: 35%;
+    height: 50%;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 15px;
+}
+
+#login1-email {
+    padding-top: 15%;
+}
+
+#login1-textbox {
+    width: 40%;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+#login1-buttons{
+    padding-top: 10%;
+}
+
+#login1-button {
+    width: 50%;
+}
+/***************STOP LOGIN1**************/
+
+/***************START LOGIN2**************/
+#login2-image {
+    margin-top: 0%;
+}
+
+#login2-white {
+    background-color: white;
+    width: 75%;
+    height: 75%;
+    margin: auto;
+    margin-top: 1%;
+    border-radius: 15px;
+}
+
+#login2-select {
+    padding-top: 4%;
+    /* margin-left: 8%; */
+}
+
+#login2-images {
+    margin-top: 5%;
+    display: flex;
+}
+
+.login2-buttons {
+    width: 90%;
+}
+.login2-buttons:hover {
+    background-color: gray;
+}
+
+.login2-setting {
+    width: 8%;
+}
+.login2-setting:hover {
+    background-color: gray;
+}
+
+#login2-confirm {
+    margin-top: 5%;
+}
+#login2-confirmbtn {
+    width: 30%;
+}
+
+#login2-forgot {
+    float: left;
+    margin-top: 8%;
+    margin-left: 2%;
+}
+/***************STOP LOGIN2**************/
+
+/***************START SIGNUP1************/
+#signup1-image {
+    margin-top: 3%;
+}
+
+#signup1-white {
+    background-color: white;
+    width: 35%;
+    height: 50%;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 15px;
+}
+
+#signup1-info {
+    padding-top: 15%;
+}
+
+#signup1-email {
+    width: 66%;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 4px;
+    resize: vertical;
+    margin-bottom: 1%;
+}
+
+#signup1-textboxname {
+    width: 30%;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+#signup1-buttons{
+    padding-top: 8%;
+}
+
+#signup1-button {
+    width: 50%;
+}
+/***************STOP SIGNUP1************/
+
+/***************START SIGNUP2************/
+#signup2-image {
+    margin-top: 0%;
+}
+
+#signup2-white {
+    background-color: white;
+    width: 75%;
+    height: 75%;
+    margin: auto;
+    margin-top: 1%;
+    border-radius: 15px;
+}
+
+#signup2-select {
+    padding-top: 4%;
+    /* margin-left: 8%; */
+}
+
+#signup2-images {
+    margin-top: 5%;
+    display: flex;
+}
+
+.signup2-buttons {
+    width: 90%;
+}
+.signup2-buttons:hover {
+    background-color: gray;
+}
+
+.signup2-setting {
+    width: 8%;
+}
+.signup2-setting:hover {
+    background-color: gray;
+}
+
+#signup2-refresh {
+    margin-top: 3%;
+}
+#signup2-refreshbtn {
+    width: 20%;
+}
+
+#signup2-confirm {
+    margin-top: 5%;
+}
+#signup2-confirmbtn {
+    width: 30%;
+}
+/**************STOP SIGNUP2**************/
+
+/**************START SIGNUP3**************/
+#signup3-image {
+    margin-top: 0%;
+}
+
+#signup3-white {
+    background-color: white;
+    width: 75%;
+    height: 75%;
+    margin: auto;
+    margin-top: 1%;
+    border-radius: 15px;
+}
+
+#signup3-select {
+    padding-top: 4%;
+    /* margin-left: 8%; */
+}
+
+#signup3-images {
+    margin-top: 5%;
+    display: flex;
+}
+
+.signup3-buttons {
+    width: 90%;
+}
+.signup3-buttons:hover {
+    background-color: gray;
+}
+
+#signup3-confirm {
+    margin-top: 5%;
+}
+#signup3-confirmbtn {
+    width: 30%;
+}
+
+.signup3-setting {
+    width: 8%;
+}
+.signup3-setting:hover {
+    background-color: gray;
+}
+/**************STOP SIGNUP3**************/
+
+/**************START FORGOT**************/
+#forgot-image {
+    margin-top: 3%;
+}
+
+#forgot-white {
+    background-color: white;
+    width: 35%;
+    height: 50%;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 15px;
+}
+
+#forgot-email {
+    padding-top: 10%;
+}
+
+#forgot-textbox {
+    width: 40%;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+#forgot-buttons{
+    padding-top: 10%;
+}
+
+#forgot-button {
+    width: 50%;
+}
+
+#forgot-select {
+    margin-top: 10%;
+}
+/**************STOP FORGOT**************/

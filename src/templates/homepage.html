@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/style.css') }}">
+    <title>Home</title>
+</head>
+<body>
+
+    <div id="homepage-image"><img src="../static/imgs/gpass.png" alt="gpass"/></div>
+
+    <div id="homepage-white">
+        <div id="homepage-buttons">
+            <a href="{{ url_for('views.login1') }}"><button class="button" id="homepage-button" type="button">Login</button></a> </br>
+            <a href="{{ url_for('views.signup1') }}"><button class="button" id="homepage-button" type="button">Sign-Up</button></a>
+        </div>
+    </div>
+
+</body>
+</html>

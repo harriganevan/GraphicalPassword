@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/style.css') }}">
+    <title>Login</title>
+</head>
+<body>
+    {% for message in get_flashed_messages() %}
+        <div class="flash">{{ message }}</div>
+    {% endfor %}
+
+    <div id="login1-image"><img src="../static/imgs/login.png" alt="login"/></div>
+
+    <div id="login1-white">
+        <div id="login1-email">
+
+            <form method="POST">
+                <input id="login1-textbox" type="text" id="email" oninput="this.value = this.value.toLowerCase()" name="email" placeholder="Enter Email..">
+                <div id="login1-buttons">
+                    <button class="button" id="login1-button" type="submit">Enter</button>
+                </div>
+            </form>
+
+        </div>
+        
+    </div>
+
+</body>
+</html>

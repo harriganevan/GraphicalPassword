@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/style.css') }}">
+    <title>Forgot</title>
+</head>
+<body>
+    {% for message in get_flashed_messages() %}
+        <div class="flash">{{ message }}</div>
+    {% endfor %}
+    <div id="forgot-image"><img src="../static/imgs/RP.png" alt="singup"/></div>
+
+    <div id="forgot-white">
+        <form method="POST">
+            <div id="forgot-email">
+                <input id="forgot-textbox" type="text" id="email" name="email" placeholder="Enter Email..">
+            </div>
+
+            <div id="forgot-buttons">
+                <button class="button" id="forgot-button" type="submit">Reset Password</button>
+            </div>
+        </form>
+
+        <p id="forgot-select">You will be sent an email with instructions to reset your password</p>
+    </div>
+
+</body>
+</html>

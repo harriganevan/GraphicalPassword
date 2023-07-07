@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/style.css') }}">
+    <title>Signup</title>
+</head>
+<body>
+    {% for message in get_flashed_messages() %}
+        <div class="flash">{{ message }}</div>
+    {% endfor %}
+
+    <div id="signup2-image"><img src="../static/imgs/signup.png" alt="singup"/></div>
+
+    <div id="signup2-white">
+        <img id= "settings" class="signup2-setting settings" src="../static/imgs/settings.png"/>
+        <div id="settings-window">
+            <label>
+              <input type="checkbox" id="text-mode" onchange="handleModes(true)">Text Mode
+            </label>
+            <br>
+            <label>
+              <input type="checkbox" id="colorblind-mode" onchange="handleModes(false)">Colorblind Mode
+            </label>
+        </div>
+        <img id="reset" class="signup2-setting reset" src="../static/imgs/reset.png"/>
+        <img id="signup2-select" src="../static/imgs/Eyp.png" width="300" height="55" alt="Enter your password">
+
+        <form method="POST">
+            <div id="signup2-images">
+                <div class="image">
+                    <img class="signup2-buttons" src="{{ imgSrcList[0] }}" data-number="{{ imgIDList[0] }}" data-section="0">
+                </div>
+                <div class="image">
+                    <img class="signup2-buttons" src="{{ imgSrcList[1] }}" data-number="{{ imgIDList[1] }}" data-section="1">
+                </div>
+                <div class="image">
+                    <img class="signup2-buttons" src="{{ imgSrcList[2] }}" data-number="{{ imgIDList[2] }}" data-section="2">
+                </div>
+                <div class="image">
+                    <img class="signup2-buttons" src="{{ imgSrcList[3] }}" data-number="{{ imgIDList[3] }}" data-section="3">
+                </div>
+                <div class="image">
+                    <img class="signup2-buttons" src="{{ imgSrcList[4] }}" data-number="{{ imgIDList[4] }}" data-section="4">
+                </div>
+                <div class="image">
+                    <img class="signup2-buttons" src="{{ imgSrcList[5] }}" data-number="{{ imgIDList[5] }}" data-section="5">
+                </div>
+                <div class="image">
+                    <img class="signup2-buttons" src="{{ imgSrcList[6] }}" data-number="{{ imgIDList[6] }}" data-section="6">
+                </div>
+                <div class="image">
+                    <img class="signup2-buttons" src="{{ imgSrcList[7] }}" data-number="{{ imgIDList[7] }}" data-section="7">
+                </div>
+                <div class="image">
+                    <img class="signup2-buttons" src="{{ imgSrcList[8] }}" data-number="{{ imgIDList[8] }}" data-section="8">
+                </div>
+            </div>
+            <div id="signup2-confirm">
+                <button class="button" id="signup2-confirmbtn" type="submit">Confirm</button>
+            </div>
+            <input id="password" type="password" name="password" hidden>
+        </form>
+
+        <div id="signup2-refresh">
+            <a href="{{ url_for('views.signup2') }}"><button class="button" id="signup2-refreshbtn" type="button">Refresh images</button></a>
+        </div>
+
+        <script src="../static/javascript/signup2.js"></script>
+
+    </div>
+
+</body>
+</html>
